@@ -49,7 +49,7 @@ The purpose of this code is to allow you to set up notifications as your code ru
 
 Once the import has been called in your project file, you can organise a message to be sent at any point you like.
 
-A recommended function for calling the program is shown below. It ensures the message is formatted with the program name.
+An example of a recommended function for calling the program is shown below. It ensures the message is formatted with the program name.
 
-  def update(message):
+  	def update(message):
 	  send_msg(f"{os.path.basename(__file__)} successfully completed task {message}")
