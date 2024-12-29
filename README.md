@@ -5,6 +5,7 @@ It requires the following:
 - A text channel on your own discord server for the messages to be posted to.
 
 Download the code as a compressed folder, extract the files, and then make the following changes to the discord_message_channel.py file. Once these are made, run the following command in the directory of the files to install the code.
+
               python3 setup.py install
 
 Initial Setup Steps:
