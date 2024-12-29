@@ -51,6 +51,6 @@ Once the import has been called in your project file, you can organise a message
 
 An example of a recommended function for calling the program is shown below. It ensures the message is formatted with the program name.
 
-  	def update(message):
+  	def update(message,current_function):
 	  	program = os.path.basename(__file__)
 		send_msg(f"{program} <in function {current_function}>: {message}")
