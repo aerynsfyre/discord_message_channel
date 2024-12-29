@@ -4,6 +4,8 @@ It requires the following:
 - A discord account which will be the bot who messages the updates.
 - A text channel on your own discord server for the messages to be posted to.
 
+Download the code as a compressed folder, extract the files, and then make the following changes to the discord_message_channel.py file. Once these are made, run python3 pip install setup.py in the directory of the files.
+
 Initial Setup Steps:
 1. To identify your user ID, follow these instructions: 
 https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID#h_01HRSTXPS5H5D7JBY2QKKPVKNA
