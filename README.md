@@ -20,14 +20,16 @@ https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User
 
 Once you have those three pieces, you can edit the code to add these notes.
 
-MUST:
-1. Bot token should be changed to the token string identified above.
+PRE-INSTALLATION SETUP:
+1. Token should be changed to the token string identified above.
 2. Edit the URL string in the code to enter your channel ID.
-3. User ID is the ID of the account which will be mentioned as @ in the message - your account.
+3. User is the ID of the account which will be mentioned as @ in the message - your account.
 
-       channel_url = "https://discord.com/api/v9/channels/<YOUR-CHANNEL-ID-HERE>/messages"
-       bot_token = "<BOT-ACCOUNT-AUTHORISATION-TOKEN-HERE>"
-       user_id = "<YOUR-USER-ID-HERE>"
+		auth = {
+			"token":"<BOT-ACCOUNT-AUTHORISATION-TOKEN-HERE>",
+   			"channel": "https://discord.com/api/v9/channels/<YOUR-CHANNEL-ID-HERE>/messages",
+   			"user": "<YOUR-USER-ID-HERE>",
+   		}
 
 Once these changes are made to the file, you can install the python package, and you can import it to your project with the standard import call:
 
@@ -37,7 +39,7 @@ If you want to simplify the function call, you can instead use:
     from discord_message_channel import send_msg
 The call to send a message is then: 
 
-    send_msg(MESSAGE_STRING)
+    send_msg(<MESSAGE_STRING>)
 This should send a message to your channel with a mention of your ID. 
 
 The purpose of this code is to allow you to set up notifications as your code runs or encounters errors. For example:
