@@ -13,7 +13,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
 	name="discord_message_channel",  
-	version="1.0.0", 
+	version="1.0.7", 
 	description="A python add-on to allow discord notifications to be sent from within python code and projects.", 
 	url="https://github.com/aerynsfyre/discord_message_channel", 
 	author="Aeryn Dunmore",  
