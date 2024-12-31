@@ -6,6 +6,7 @@ The message_channel file must be edited as shown in the readme file BEFORE insta
 
 from setuptools import setup, find_packages
 import pathlib
+import discord_message_channel
 
 here = pathlib.Path(__file__).parent.resolve()
 
@@ -38,3 +39,8 @@ setup(
 	install_requires=["requests"],
 
 )
+
+try:
+	setup()
+finally:
+	discord_message_channel.write_auth()
